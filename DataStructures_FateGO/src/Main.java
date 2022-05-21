@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) throws IOException {
 
-		File myObj = new File(/*"C:\\Users\\ultra\\eclipse-workspace\\DataStructures_FateGO\\src\\"*/ "ServantDatabase.csv");
+		File myObj = new File( "ServantDatabase.csv");
 		Scanner myReader = new Scanner(myObj);
 		Scanner input = new Scanner(System.in);
 
@@ -31,8 +31,7 @@ public class Main {
 		
 		
 		if(user == 1) {	
-			try(BufferedWriter writer = new BufferedWriter(new FileWriter(/*"C:\\Users\\ultra\\eclipse-workspace\\DataStructures_FateGO\\"
-					+  "src\\*/"ServantDatabase.csv", true));
+			try(BufferedWriter writer = new BufferedWriter(new FileWriter("ServantDatabase.csv", true));
 					BufferedWriter bw = new BufferedWriter(writer);
 					PrintWriter output = new PrintWriter(bw))
 			{
@@ -61,8 +60,7 @@ public class Main {
 			myReader.close();	
 		}
 		else if(user == 5) {
-			BufferedWriter writer = new BufferedWriter(new FileWriter("C:\\Users\\ultra\\eclipse-workspace\\DataStructures_FateGO\\"
-					+ "src\\ServantDatabase.csv", false));
+			BufferedWriter writer = new BufferedWriter(new FileWriter(""ServantDatabase.csv", false));
 			writer.append("");
 				
 			}
